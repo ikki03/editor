@@ -6,7 +6,7 @@ import org.ulco.*;
 public class LayerTest extends TestCase {
     public void testType() throws Exception {
         Document document = new Document();
-        int oldID = ID.ID;
+        int oldID = ID.getInstance().valeur();
         Layer layer = document.createLayer();
 
         layer.add(new Square(new Point(2, 8), 10));
