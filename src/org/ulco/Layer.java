@@ -77,15 +77,8 @@ public class Layer {
         }
     }
 
-    public GraphicsObjects select(Point pt, double distance) {
-        GraphicsObjects list = new GraphicsObjects();
-
-        for (GraphicsObject object : m_list) {
-            if (object.isClosed(pt, distance)) {
-                list.add(object);
-            }
-        }
-        return list;
+    public Vector<GraphicsObject> get_list(){
+        return m_list;
     }
 
     public String toJson() {

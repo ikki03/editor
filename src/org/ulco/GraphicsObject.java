@@ -11,7 +11,7 @@ abstract public class GraphicsObject {
         return m_ID;
     }
 
-    abstract boolean isClosed(Point pt, double distance);
+    public abstract boolean isClosed(Point pt, double distance);
 
     abstract void move(Point delta);
 

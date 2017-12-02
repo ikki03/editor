@@ -12,8 +12,8 @@ public class DocumentTest extends TestCase {
 
         layer.add(c);
 
-        assertTrue(document.select(new Point(1,1), 8).size() == 1);
-        assertTrue(document.select(new Point(1,1), 8).firstElement().getID() == c.getID());
+        assertTrue(Utilitaires.select(document,new Point(1,1), 8).size() == 1);
+        assertTrue(Utilitaires.select(document,new Point(1,1), 8).firstElement().getID() == c.getID());
     }
 
     public void testSelect2() throws Exception {
@@ -25,7 +25,7 @@ public class DocumentTest extends TestCase {
         layer.add(c);
         layer.add(s);
 
-        assertTrue(document.select(new Point(1,1), 8).size() == 2);
+        assertTrue(Utilitaires.select(document,new Point(1,1), 8).size() == 2);
     }
 
     public void testJSON() throws Exception {

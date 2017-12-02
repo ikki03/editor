@@ -176,7 +176,7 @@ public class Group extends GraphicsObject {
     }
 
     @Override
-    boolean isClosed(Point pt, double distance) {
+    public boolean isClosed(Point pt, double distance) {
         return false;
     }
 
